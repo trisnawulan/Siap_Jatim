@@ -34,6 +34,13 @@
     width: 50px;
     margin-right: 10px;
   }
+
+  .logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+  
   
   nav a {
     color: white;
@@ -115,9 +122,100 @@
   .card:hover {
     transform: scale(1.05);
   }
-  
+
   .card p {
     font-size: 0.9rem;
     font-weight: bold;
   }
+
+  .footer {
+    background-color: #3e3e3e;
+    color: white;
+    padding: 40px 20px;
+    font-family: sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-logo img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo h3 {
+    color: #f0b429;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+  
+  .footer-logo span {
+    color: #ffffff;
+  }
+  
+  .tagline {
+    color: #42aaff;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  
+  .footer-contact,
+  .footer-social {
+    max-width: 300px;
+  }
+  
+  .footer-contact h4,
+  .footer-social h4 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.1rem;
+  }
+  
+  .footer p {
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item p {
+    margin: 0;
+    white-space: normal;
+    word-break: break-word;
+    line-height: 1.4;
+  }
+  
+  .icon {
+    color: #f0b429;
+    margin-top: 4px;
+    flex-shrink: 0;
+  }
+  
+  /* Responsif Mobile */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-logo,
+    .footer-contact,
+    .footer-social {
+      width: 100%;
+    }
+  }
+  
   
