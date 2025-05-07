@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* agar selalu di atas elemen lain */
+    background-color: #2e6f9e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: bold;
+  }
+  
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  main {
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 80px 20px;
+    padding-top: 140px; /* memberi jarak untuk header yang fixed */
+    position: relative;
+    
+  }
+  
+  .background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 200, 0.6); /* efek transparan */
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 1; /* Supaya overlay di bawah konten */
+    display: inline-block;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2; /* Supaya teks muncul di atas overlay */
+    padding: 20px;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #003366;
+  }
+  
+  .cards {
+    position: relative;
+    z-index: 2; /* Ini agar tampil di atas overlay */
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    padding: 15px;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
