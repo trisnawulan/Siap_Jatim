@@ -50,16 +50,27 @@
   }
   
   main {
-    background-image: url('img/bg.jpg');
+    /* background-image: url('img/bg.jpg'); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     padding: 80px 20px;
     padding-top: 140px; /* memberi jarak untuk header yang fixed */
-    position: relative;
-    
+    /* position: relative; */
+    padding-bottom: 120px;
   }
+
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
   
   .background-overlay {
     position: absolute;
@@ -82,7 +93,7 @@
 
   .content h1 {
     font-size: 2.5rem;
-    color: #003366;
+    color: #ffffff;
     font-weight: bold;
   }
 
