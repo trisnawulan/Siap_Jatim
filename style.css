@@ -153,14 +153,6 @@ h1 {
   font-weight: bold;
 }
 
-.content, .cards {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: white;
-}
-
-
 .footer {
   background-color: #3a3a3a;
   color: white;
